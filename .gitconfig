@@ -14,6 +14,7 @@
   cm = commit -m
   co = checkout
   cob = checkout -b
+  dc = diff --cached
   fix = commit --fixup
   fixed = rebase -i --autosquash
   fixlast = "!f() { git fix HEAD; }; f"
