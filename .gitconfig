@@ -23,8 +23,11 @@
   lsa = "!f() { git ls --all; }; f"
   lsd = "!f() { git ls --numstat; }; f"
   lsda = "!f() { git ls --numstat --all; }; f"
+  save = !git add -A && git commit -m 'SAVEPOINT'
   st = status
+  undo = reset HEAD~1 --mixed
   up = pull --rebase --prune
+  wip = commit -am "WIP"
 [rerere]
   enabled = true
 [rebase]
